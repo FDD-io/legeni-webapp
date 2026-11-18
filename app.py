@@ -137,3 +137,20 @@ app = create_app()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", "5000")))
+
+def quality_gate_uncovered(value):
+    if value == 1:
+        return "one"
+    if value == 2:
+        return "two"
+    if value == 3:
+        return "three"
+    if value == 4:
+        return "four"
+    if value == 5:
+        return "five"
+    if value == 6:
+        return "six"
+    if value == 7:
+        return "seven"
+    return "other"
